@@ -76,22 +76,22 @@
 <body>
     <div class="container">
         <h1>Password Encryptor/Decryptor</h1>
-        
+
         <div class="input-group">
-            <label for="secret">Secret Key:</label>
-            <input type="password" id="secret" placeholder="Enter your secret key">
-        </div>
-        
-        <div class="input-group">
-            <label for="text">Text:</label>
+            <label for="text">Data to encrypt/decrypt:</label>
             <input type="text" id="text" placeholder="Enter text to encrypt/decrypt">
         </div>
-        
+
+        <div class="input-group">
+            <label for="secret">Your Secret Key:</label>
+            <input type="password" id="secret" placeholder="Enter your secret key">
+        </div>
+
         <div class="button-group">
             <button class="encrypt" onclick="handleEncrypt()">Encrypt</button>
             <button class="decrypt" onclick="handleDecrypt()">Decrypt</button>
         </div>
-        
+
         <div id="result"></div>
     </div>
     <script src="script.js"></script>
