@@ -1,0 +1,18 @@
+<div class="tab-pane fade" id="json-formatter" role="tabpanel">
+    <h5 class="mb-4">JSON Formatter</h5>
+    <div class="mb-3">
+        <label for="json-input" class="form-label">JSON Input:</label>
+        <textarea class="form-control" id="json-input" rows="8" placeholder="Enter your JSON here..."></textarea>
+    </div>
+
+    <button class="btn btn-primary mb-3" onclick="formatJSON()">
+        <i class="bi bi-code-square"></i> Format JSON
+    </button>
+
+    <div class="result-container">
+        <pre id="formatted-json" class="d-none"></pre>
+        <button id="copy-json" class="btn btn-outline-secondary copy-button d-none" onclick="copyJSON()">
+            <i class="bi bi-clipboard"></i> Copy
+        </button>
+    </div>
+</div>
